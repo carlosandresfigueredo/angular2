@@ -2,13 +2,14 @@
   "name": "carros",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:carros": "node dist/carros/server/server.mjs"
-  },
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build",
+  "test": "ng test",
+  "lint": "ng lint",
+  "e2e": "ng e2e",
+  "deploy": "ng build --base-href \"https://carlosandresfigueredo.github.io/angular2/\" && npx angular-cli-ghpages --dir=dist/carros"
+},
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
